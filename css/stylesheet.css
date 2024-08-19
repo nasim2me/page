@@ -1,0 +1,931 @@
+
+@font-face {
+  font-family: IBMPlexSans-Bold;
+  src: url('../fonts/ibmplexsans/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: IBMPlexSans-SemiBold;
+  src: url('../fonts/ibmplexsans/IBMPlexSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: IBMPlexSans-Light;
+  src: url('../fonts/ibmplexsans/IBMPlexSans-Light.ttf');
+}
+
+.header {
+  height: 100vh;
+  text-align:center;
+  overflow: hidden;
+  position:relative;
+}
+.header::after {
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.5)) ,  url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.header h1{
+  position:relative;
+  top: 30%;
+  font-family: 'Roboto';
+  font-size: 9em;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.header h1 span {
+  color: #FFCE00;
+}
+
+.AboutUs {
+  text-align: center;
+  width: auto;
+  padding-left: 2.5vw;
+  padding-bottom: 5vh;
+}
+.Title {
+  font-family: 'Roboto';
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight:bold;
+  color: white;
+}
+
+.team-title {
+  font-family: 'Roboto';
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight:bold;
+  color: black;
+}
+
+.uk-light .uk-iconnav>.uk-active>a>svg>rect {
+  color:white;
+}
+.uk-light .uk-iconnav>.uk-active>.uk-icon {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.uk-light .uk-iconnav>*>a>svg>rect {
+  width: 24px !important;
+  height:4px;
+}
+.uk-light .uk-iconnav>*>a>svg{
+  width: 24px;
+}
+.Date{
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 50px;
+  line-height: 1.2;
+  padding-top: 2vh;
+}
+.Time{
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #cc5200;
+}
+.Location{
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #cc5200;
+}
+.infodesc {
+  text-align: left;
+  font-family: 'Roboto';
+  font-size: 50px;
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #FFCE00;
+}
+.boarddesc {
+  color: #bbb;
+}
+.aboutUsText{
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 2vw;
+  color: #cccccc;
+}
+
+hr{
+  position:relative;
+  border: 2px solid #ff6600;
+  width: 25%;
+  left: 37.5%;
+  margin-bottom: 5vh;
+  padding:0px;
+}
+
+.info {
+  margin-bottom: 10vh;
+  text-align: left;
+}
+
+.sponsor {
+  height: 500px;
+  border: none;
+  overflow: hidden;
+}
+
+.sponsorGEMLogo {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.eagle{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)) ,  url('https://www.thoughtco.com/thmb/HkYbzkvhT1OzVdXLRkKwh6mp8Xc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/american-bald-eagle-head-in-front-of-american-flag-950701786-5b85581346e0fb0025e00b06.jpg');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  background-attachment:scroll;
+}
+
+.falcon{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)) ,  url('https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/11/04/931/524/694940094001_5857455145001_5857450760001-vs.jpg?ve=1&tl=1');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  background-attachment:scroll;
+}
+
+.pelican{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)) , url('https://www.allaboutbirds.org/guide/assets/photo/304463771-480px.jpg');
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  background-attachment:scroll;
+}
+
+.eagle:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)) ,  url('https://www.thoughtco.com/thmb/HkYbzkvhT1OzVdXLRkKwh6mp8Xc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/american-bald-eagle-head-in-front-of-american-flag-950701786-5b85581346e0fb0025e00b06.jpg');
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+
+}
+
+.falcon:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)) ,  url('https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/11/04/931/524/694940094001_5857455145001_5857450760001-vs.jpg?ve=1&tl=1');
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.pelican:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)) , url('https://www.allaboutbirds.org/guide/assets/photo/304463771-480px.jpg');
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#officers,
+#officers2 {
+  background-color: black;
+}
+
+.eagle .Title,
+.falcon .Title,
+.pelican .Title {
+  position:relative;
+  color:white;
+  top:30%;
+  font-size: 100px;
+}
+
+#modal .Title,
+#modal1 .Title,
+#modal2 .Title{
+  color: black;
+}
+#gallery .Title{
+  color: black;
+  padding-top: 0%;
+  margin-top:5%;
+}
+#gallery {
+  padding: 5%;
+}
+
+.ukdotnav{
+  border: black;
+}
+.sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+.sponsors .Title {
+  color: black;
+}
+
+.diamond-sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+
+.diamond-sponsors .Title {
+  color: #b9f2ff;;
+  text-decoration: underline;
+}
+
+.platinum-sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+
+.platinum-sponsors .Title {
+  color: #E5E4E2;
+  text-decoration: underline;
+}
+
+.gold-sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+
+.gold-sponsors .Title {
+  color: gold;
+  text-decoration: underline;
+}
+
+.silver-sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+
+.silver-sponsors .Title {
+  color: #B4B4B4;
+  text-decoration: underline;
+}
+
+
+.bronze-sponsors {
+  background-color: white;
+  padding: 1vh;
+  text-align:center;
+}
+
+.bronze-sponsors .Title {
+  color: #AC8A56;
+  text-decoration: underline;
+}
+
+
+.adblock {
+  color: #222;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+.memberinfo {
+  background-color: black;
+  padding-right: 5vw;
+}
+
+.musicianinfo {
+  background-color: black;
+  padding-right: 5vw;
+}
+
+.DescriptionText {
+  padding-top: 12%;
+  font-family: 'Roboto';
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 5vw;
+  color: #cc5200;
+}
+
+.mbutton {
+  margin-left: 5vw;
+  margin-top: 2vh;
+  font-family: 'Roboto';
+  font-size: 35px;
+  padding: 1%;
+  color:white;
+  background-color: black;
+}
+
+.mbutton:hover{
+  color:black;
+  background-color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.ebutton {
+  margin-left: 5vw;
+  font-family: 'Roboto';
+  font-size: 35px;
+  padding: 1%;
+  color:black;
+  background-color:#fff7e6;
+}
+
+.ebutton:hover{
+  color:white;
+  background-color: black;
+  -webkit-transition-duration: 0.5s;
+  transition-duration:0.5s;
+}
+.imgwrapper{
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #ffce00;
+}
+
+.officerimg {
+  width: auto;
+  height: 100%;
+}
+
+.officer{
+  text-align:center;
+  overflow: hidden;
+  padding-bottom: 5vh;
+}
+
+.officers .Title {
+  padding:3vh;
+}
+#contactUs {
+  font-size: 40px;
+  padding: 0;
+}
+.contactUs hr {
+  position:relative;
+  border: 2px solid #ff6600;
+  width: 25%;
+  left: 37.5%;
+  margin-bottom: 5vh;
+  padding:0px;
+}
+
+i.fab,
+i.fas {
+  color: white;
+}
+.contactUs .Title {
+  padding-bottom:3vh;
+  color: white;
+}
+.footer a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.contactUs {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.contactUs a {
+  color: white;
+  font-size: 40px;
+  font-family: 'Roboto';
+}
+
+.contactUs a:hover {
+  color: gray;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Roboto';
+}
+
+.officers1 {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+}
+.officers2 {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.boardname{
+  font-family: 'Roboto' !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.boarddesc{
+  font-family: 'Roboto' !important;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer{
+  background-color: black;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.footer h1{
+  font-family: 'Roboto';
+  font-size: 40px;
+}
+
+.footer p{
+  font-family: 'Roboto';
+  font-size: 15px;
+  color:white;
+}
+
+.uk-logo {
+  height: 100px;
+  padding: 5% 0% 5% 10%;
+}
+.uk-navbar-container{
+  background-color: #000000 !important;
+}
+
+.uk-navbar-left > a{
+  font-family: 'Roboto' !important;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 2vw;
+}
+
+.uk-navbar-left > ul > li > a{
+  font-family: 'Roboto' !important;
+  font-weight: bold;
+}
+
+
+.uk-navbar-right > ul > li > a{
+  font-family: 'Roboto' !important;
+  color: white;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-weight: bold;
+}
+
+.uk-navbar-right > ul > li > a:hover {
+  color: #666666;
+}
+
+.uk-active > a,
+.uk-active > a:hover{
+  background-color: #000000 !important;
+}
+
+.uk-nav > li > a{
+  font-family: 'Roboto' !important;
+  color: white !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+.sponsors {
+  padding: 2% 10% 2% 10%;
+}
+.sponsors2 {
+    background-color: black;
+    padding: 2%;
+}
+.sponsors2>.adblock {
+  color: #ccc;
+}
+.sponsors2>.Title {
+  color: #ffce00;
+}
+.SponsorUs>button>.Title {
+  font-size: 80px;
+}
+.sponsorimg {
+  width: 400px;
+  padding: 2%;
+}
+
+.sponsorimg2 {
+  padding: 2%;
+}
+
+@media only screen and (max-width: 1600px) {
+
+  .imgwrapper{
+    width: 150px;
+    height: 150px;
+  }
+
+  .officers1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+  }
+  .officers2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+  }
+
+  .boardname{
+    margin: 0px;
+  }
+
+  .boarddesc{
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  .officers {
+    text-align: center;
+  }
+
+  .officer {
+    text-align: center;
+  }
+
+  .memberimg .Title,
+  .musicianimg .Title {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .header h1{
+    font-size: 90px;
+    top: 40%;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width:1000px) {
+  .uk-iconnav{
+    display: none;
+  }
+  .sponsorimg {
+    width: 250px;
+    padding: 2%;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .header::after {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.5)) ,  url('../img/background.jpg');
+  }
+
+  .header h1{
+    font-size: 45px;
+    top: 30%;
+  }
+
+  .header h1 span{
+    font-size: 70px;
+  }
+
+  .imgwrapper{
+    width: 100px;
+    height: 100px;
+  }
+
+  .boardname{
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  .boarddesc{
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  .officers {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .memberimg .Title,
+  .musicianimg .Title {
+    font-size: 60px;
+  }
+
+  .DescriptionText {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .mbutton {
+    font-size: 25px;
+  }
+
+  .sponsor {
+    height: 390px;
+  }
+
+  .navbarToggle svg{
+    color: white;
+
+  }
+
+  .navbarToggle {
+    width: 70px;
+  }
+
+  .uk-offcanvas-close svg{
+    color: white;
+  }
+  .contactUs .Title {
+    font-size: 40px;
+  }
+  .Title {
+    font-size: 40px;
+  }
+  .infodesc {
+    font-size: 40px;
+  }
+  .aboutUsText {
+    font-size: 16px;
+  }
+  .adblock {
+    font-size: 16px;
+  }
+  .sponsors>.Title {
+    padding-bottom: 0px;
+  }
+  .eagle,
+  .pelican,
+  .falcon {
+    height: 300px;
+  }
+  .eagle>.Title,
+  .pelican>.Title,
+  .falcon>.Title {
+    font-size: 60px !important;
+  }
+  .uk-logo {
+    height: 70px;
+    padding: 5% 10% 5% 10%;
+  }
+
+}
+
+  .table {
+    border:1px solid #b3adad;
+    border-collapse:collapse;
+    padding:5px;
+    border-spacing: 30px;
+    width: 100%;
+  }
+
+  .table th {
+    border:1px solid #b3adad;
+    padding:5px;
+    background: #ffd500;
+    color: #000000;
+    font-size: 30px;
+  }
+
+  .table td {
+    border:1px solid #b3adad;
+    text-align:center;
+    padding:5px;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  
+  .button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffce00;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffce00;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #ffce00;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+  .button-29 {
+    appearance: none;
+    background-color: #ffce00;
+    border: 2px solid #ffce00;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+  }
+
+  .button-29:hover {
+    color: #fff;
+    background-color: #ffce00;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-29:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+   
+  .flex-parent {
+    display: flex;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
+  button.margin-right {
+    margin-right: 20px;
+  }
+              
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #ffce00;
+  color: black;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    vertical-align: top;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ffce00;
+}
+
+.styled-row {
+  font-weight: bold;
+  color: black;
+}
+
+
+.team-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-table td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.team-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h2.teams-page {
+  font-family: 'Roboto';
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight:bold;
+  color: black;
+}
+
+img.club-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+
+
+/* contact form */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffce00;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffce00;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactus {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
