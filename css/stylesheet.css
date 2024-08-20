@@ -22,7 +22,7 @@
 }
 .header::after {
   content: "";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.5)) ,  url('../img/background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.5)) ,  url('../img/Background.jpg');
   background-repeat: no-repeat;
   background-size: cover !important;
   background-attachment: fixed;
